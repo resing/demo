@@ -1,0 +1,14 @@
+parameters:
+    git_dir:  .
+    bin_dir: "vendor/bin"
+    tasks:
+        phpcs:
+            whiteList_patterns:
+              - /^src/
+        phpstan:
+            ignore_patterns:
+                - /^tests/
+                - /^features/
+        phpmd:
+            exclude: ['tests', 'features']
+            ruleset: ['phpmd.xml']
