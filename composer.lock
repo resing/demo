@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75f29ab086326185e6026f429c11aa2e",
+    "content-hash": "2e8ff189aaf3df60245c1526361589ae",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -4134,16 +4134,16 @@
         },
         {
             "name": "symfony/security",
-            "version": "v4.0.15",
+            "version": "v4.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security.git",
-                "reference": "a2903554b8fa01d4f7dad50de918b70569b2c6e0"
+                "reference": "9775f1929cfa18a710c63a74a1caa768da8abc15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security/zipball/a2903554b8fa01d4f7dad50de918b70569b2c6e0",
-                "reference": "a2903554b8fa01d4f7dad50de918b70569b2c6e0",
+                "url": "https://api.github.com/repos/symfony/security/zipball/9775f1929cfa18a710c63a74a1caa768da8abc15",
+                "reference": "9775f1929cfa18a710c63a74a1caa768da8abc15",
                 "shasum": ""
             },
             "require": {
@@ -4180,7 +4180,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -4188,7 +4188,10 @@
                     "Symfony\\Component\\Security\\": ""
                 },
                 "exclude-from-classmap": [
-                    "/Tests/"
+                    "/Core/Tests/",
+                    "/Csrf/Tests/",
+                    "/Guard/Tests/",
+                    "/Http/Tests/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4207,7 +4210,7 @@
             ],
             "description": "Symfony Security Component",
             "homepage": "https://symfony.com",
-            "time": "2018-12-06T11:39:37+00:00"
+            "time": "2019-04-06T19:18:44+00:00"
         },
         {
             "name": "symfony/security-bundle",
