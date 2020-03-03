@@ -15,6 +15,7 @@ class DefaultController extends Controller
      */
     public function index(): JsonResponse
     {
+        return [];
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
