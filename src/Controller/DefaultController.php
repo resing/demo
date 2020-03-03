@@ -13,9 +13,13 @@ class DefaultController extends Controller
      */
     public function index(): Response
     {
-        die;
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
+    }
+
+    protected function test()
+    {
+        return 'hello word';
     }
 }
