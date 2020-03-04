@@ -13,11 +13,12 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="default")
      */
-    public function index(): JsonResponse
+    public function index(): bool
     {
-        d,
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
     }
+
+
 }
