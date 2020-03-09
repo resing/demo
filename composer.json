@@ -26,7 +26,7 @@
         "symfony/flex": "^1.0",
         "symfony/form": "4.0.*",
         "symfony/framework-bundle": "4.0.*",
-        "symfony/http-foundation": "4.0.*",
+        "symfony/http-foundation": "4.2.*",
         "symfony/http-kernel": "4.0.*",
         "symfony/inflector": "4.0.*",
         "symfony/intl": "4.0.*",
