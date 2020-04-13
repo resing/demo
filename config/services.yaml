@@ -27,5 +27,27 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
+    App\DataCollector\HttpDataCollector:
+        tags:
+            -
+                name:     data_collector
+                template: 'data_collector/template.html.twig'
+                id:       'app.http'
+                # optional priority
+#                priority: 300
+        public: false
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Services\UserManager:
+        abstract:  true
+        arguments: ['@doctrine.orm.entity_manager']
+        calls:
+            - [setLogger, ['@logger']]
+
+    App\Services\UserLogger:
+        parent: App\Services\UserManager
+        public: true
+        autowire: true
+        autoconfigure: false
+        arguments:
+            index_0: '@App\Repository\UserRepository'

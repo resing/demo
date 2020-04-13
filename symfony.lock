@@ -1,4 +1,16 @@
 {
+    "composer/ca-bundle": {
+        "version": "1.2.6"
+    },
+    "composer/composer": {
+        "version": "1.9.3"
+    },
+    "composer/semver": {
+        "version": "1.5.1"
+    },
+    "composer/spdx-licenses": {
+        "version": "1.5.3"
+    },
     "composer/xdebug-handler": {
         "version": "1.4.0"
     },
@@ -99,11 +111,44 @@
     "fig/link-util": {
         "version": "1.0.0"
     },
+    "gitonomy/gitlib": {
+        "version": "v1.2.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "jean85/pretty-package-versions": {
+        "version": "1.2"
+    },
+    "justinrainbow/json-schema": {
+        "version": "5.2.9"
+    },
     "monolog/monolog": {
         "version": "1.24.0"
+    },
+    "nette/bootstrap": {
+        "version": "v3.0.1"
+    },
+    "nette/di": {
+        "version": "v3.0.3"
+    },
+    "nette/finder": {
+        "version": "v2.5.2"
+    },
+    "nette/neon": {
+        "version": "v3.1.1"
+    },
+    "nette/php-generator": {
+        "version": "v3.3.4"
+    },
+    "nette/robot-loader": {
+        "version": "v3.2.2"
+    },
+    "nette/schema": {
+        "version": "v1.0.2"
+    },
+    "nette/utils": {
+        "version": "v3.1.1"
     },
     "nikic/php-parser": {
         "version": "v4.2.1"
@@ -113,6 +158,9 @@
     },
     "pdepend/pdepend": {
         "version": "2.7.1"
+    },
+    "php": {
+        "version": "7.2"
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -125,6 +173,15 @@
     },
     "phpmd/phpmd": {
         "version": "2.8.2"
+    },
+    "phpro/grumphp": {
+        "version": "v0.18.0"
+    },
+    "phpstan/phpdoc-parser": {
+        "version": "0.3.5"
+    },
+    "phpstan/phpstan": {
+        "version": "0.10.9"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -141,6 +198,12 @@
     "psr/simple-cache": {
         "version": "1.0.1"
     },
+    "seld/jsonlint": {
+        "version": "1.7.2"
+    },
+    "seld/phar-utils": {
+        "version": "1.1.0"
+    },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
         "recipe": {
@@ -151,6 +214,18 @@
         },
         "files": [
             "config/packages/sensio_framework_extra.yaml"
+        ]
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "0dc9cceda799fd3a08b96987e176a261028a3709"
+        },
+        "files": [
+            "phpcs.xml.dist"
         ]
     },
     "swiftmailer/swiftmailer": {
@@ -317,6 +392,9 @@
     },
     "symfony/polyfill-intl-icu": {
         "version": "v1.10.0"
+    },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.14.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.10.0"

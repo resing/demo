@@ -1,3 +1,25 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+#test:
+#    path: /{testUrl}
+#    controller: App\Controller\DefaultController::testUrlCertif
+#    requirements:
+#        testUrl: .*/$
+#testWithoutSlash:
+#    path: /testUrlWithSlash
+#    controller: App\Controller\DefaultController::testUrlCertif
+
+blog_page:
+    path: /blog/{page}
+    controller: App\Controller\DefaultController::blog
+    requirements:
+        page: \d*
+    defaults:
+        page: 1
+
+blog_test:
+    path: /agenda/{date}
+    controller: App\Controller\DefaultController::testUrlPattern
+    requirements:
+        date: (?:20\d{2})-(?:(0?[1-9]|1[1-2]))-(?:(0?|[1-2])\d|3[0-1])

@@ -2,22 +2,40 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\RedirectResponse;
+use App\Services\UserLogger;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
 
-class DefaultController extends Controller
+class DefaultController extends AbstractController
 {
-    /**
-     * @Route("/", name="default")
-     */
-    public function index(): JsonResponse
+    public function index(UserLogger $userLogger): Response
     {
-        return true;
+        $userLogger->getUserByEmail();
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
+    }
+
+    public function testUrlCertif(): Response
+    {
+        echo 'Redirect URLs with a Trailing Slash';
+        return $this->render('default/index.html.twig', [
+            'controller_name' => 'DefaultController',
+        ]);
+    }
+
+//    public function testUrlCertifWithSlah(): Response
+//    {
+//        echo 'Redirect URLs with a Trailing Slash hard Coding even without slash Symfony adding Slash';
+//        return $this->render('default/index.html.twig', [
+//            'controller_name' => 'DefaultController',
+//        ]);
+//    }
+
+    public function testUrlPattern($date)
+    {
+        echo 'good';
+
+        return new Response('yes top');
     }
 }
